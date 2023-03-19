@@ -1,0 +1,57 @@
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+.movie_list{
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-bottom: 5%;
+}
+.movie_card{
+  padding: 0 !important;
+  background-color:rgba(0, 0, 0, 0.2);
+  width: 20%;
+  margin: 2%; 
+  border-radius: 10px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  cursor:pointer;
+  transition: transform .2s ease;
+}
+.movie_card:hover {
+  transform: scale(1.1);
+}
+.movie_card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 60%;
+}
+.card-title{
+  width: 90%;
+  height: 20%;
+}
+.card-description{
+  width: 90%;
+  height: 10%;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#bouton-back {
+  height: 50px;
+  width: 500px;
+  background-color: #686de0;
+  position: fixed;
+  top: 100px;
+}

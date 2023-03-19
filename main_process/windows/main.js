@@ -18,7 +18,7 @@ function destroyWindow() {
 function createWindow() {
     destroyWindow();
     mainWindow = new electron.BrowserWindow({
-        title: "ChatClasse",
+        title: "Pears Streaming",
         width: 1280,
         height: 720,
         minWidth: 980,

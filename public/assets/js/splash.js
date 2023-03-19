@@ -14,9 +14,7 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Nouvelle version !", "author": "Guillaume" },
-            { "message": "BLABLABLA", "author": "Guillaume" },
-            { "message": "VERSION 0.2.1 !", "author": "Guillaume" }
+            { "message": "Bienvenur sur Pears !", "author": "Guillaume" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -61,7 +59,7 @@ class Splash {
     }
 
     async maintenanceCheck() {
-    ipcRenderer.invoke('fetch', 'http://146.59.227.84:3001').then(res => {
+    ipcRenderer.invoke('fetch', 'https://raw.githubusercontent.com/guillaumevd/streaming_manifest/main/manifest.json').then(res => {
         if (res.maintenance) return this.shutdown(res.maintenance_message);
             this.startLauncher();
         }).catch(e => {

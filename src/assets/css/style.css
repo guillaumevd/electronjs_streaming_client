@@ -1,0 +1,36 @@
+body {
+  background-color:rgb(12, 15, 22);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+
+.background {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffffea;
+}
+
+::-webkit-scrollbar {
+  
+  width: 8px;
+  
+  height: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
+}

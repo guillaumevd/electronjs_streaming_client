@@ -1,5 +1,5 @@
-appId: 'be.guillaumevd.chatclasse'
-productName: 'ChatClasse'
+appId: 'be.guillaumevd.pearstreaming'
+productName: 'Pears Streaming'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2022 Guillaume Vandriessche'
@@ -32,17 +32,6 @@ nsis:
   allowToChangeInstallationDirectory: false
   createDesktopShortcut: true
   runAfterFinish: true
-
-# macOS Configuration
-mac:
-  icon: 'build/assets/images/icon.icns'
-  target:
-    - target: 'dmg'
-      arch:
-        - 'x64'
-        - 'arm64'
-  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
-  category: 'public.app-category.games'
 
 # Linux Configuration
 linux: 

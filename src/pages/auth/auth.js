@@ -31,9 +31,9 @@ const AuthPage = (props) => {
   };
 
   return (
-    <div className="background">
+    <div style={{ height: "100%", width: "100%" }}>
       <div className="row">
-        <div className="column left">
+        <div className="col-md-6">
           <form onSubmit={onLogin} className="form-card">
             <div className="form-title">Bienvenue 👋</div>
 
@@ -64,7 +64,7 @@ const AuthPage = (props) => {
             </div>
           </form>
         </div>
-        <div className="column right">
+        <div className="col-md-6">
           <form onSubmit={onSignup} className="form-card">
             <div className="form-subtitle">Pas encore de compte ?</div>
             <div className="auth">

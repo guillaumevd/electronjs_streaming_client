@@ -17,7 +17,7 @@ function destroyWindow() {
 function createWindow() {
     destroyWindow();
     updateWindow = new electron.BrowserWindow({
-        title: "Mise à jour",
+        title: "Pears Streaming MAJ",
         width: 400,
         height: 500,
         icon: path.join(electron.app.getAppPath(), 'build', 'assets', 'images', 'icon') + `.${os.platform() === "win32" ? "ico" : "png"}`,
